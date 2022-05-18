@@ -7,9 +7,8 @@ import PersonProfile from "./pages/PersonProfile";
 export default function App() {
   const [hiredPeople, setHiredPeople] = useState([]);
 
-  const hiredPerson = (person) => {
-    setHiredPeople([...hiredPeople, person]);
-    console.log("HIRED PEOPLE: ", hiredPeople);
+  const hiredPerson = (person, wage) => {
+    setHiredPeople([...hiredPeople, { ...person, wage: wage }]);
   };
 
   return (

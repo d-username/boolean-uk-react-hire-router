@@ -8,7 +8,7 @@ function HireForm({ person, hiredPerson }) {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    hiredPerson(person);
+    hiredPerson(person, wage);
     navigate("/");
   };
 
